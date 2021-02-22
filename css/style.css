@@ -14,8 +14,9 @@ li{
     list-style-type: none;
 }
 .wrapper{
-    margin-left: 20px;
-    max-width: 300px;;
+    display: flex;
+    justify-content: center;
+
 }
 
 .rounded {
