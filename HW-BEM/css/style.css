@@ -110,7 +110,6 @@ img{
 }
 @media (max-width: 1000px){
     .box{
-        display: grid;
         grid-template-areas: 
             "a b"
             "c d"
@@ -120,7 +119,6 @@ img{
 
 @media (max-width: 660px){
     .box{
-        display: grid;
         grid-template-areas: 
             "a"
             "b"
