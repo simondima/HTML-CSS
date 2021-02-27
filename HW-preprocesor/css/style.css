@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  background-image: url(../img/map.jpg);
+}
+
+.map__color-blue {
+  background: rgba(62, 62, 207, 0.7);
+}
+
+.map__color-purple {
+  background: rgba(216, 18, 255, 0.7);
+}
+
+.map__color-red {
+  background: rgba(255, 62, 62, 0.7);
+}
+
+.map__color-yellow {
+  background: rgba(255, 255, 0, 0.7);
+}
+
+.map__color-grey {
+  background: rgba(100, 92, 92, 0.7);
+}
+
+.continent {
+  width: 330px;
+  background: rgba(136, 121, 121, 0.5);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.continent__title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.country {
+  display: block;
+}
+
+.country__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.country__flag {
+  width: 40%;
+}
+
+.country__title {
+  font-size: 20px;
+}
+
+.city {
+  margin-top: 15px;
+}
+
+.city__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.city__flag {
+  width: 20%;
+}
+/*# sourceMappingURL=style.css.map */
