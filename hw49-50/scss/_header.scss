@@ -1,0 +1,53 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.head {
+    @include flex(center, space-between);
+    padding: 45px 0;
+
+    &__logo a {
+        font-size: 88px;
+        font-family: QuiteChocolatey;
+        color: #fff;
+    }
+
+    &__menu-items {
+        @include flex(center, space-between);
+ 
+    }
+    &__menu-items li {
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    &__menu-items li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: MontserratRegular;
+    }
+    .active {
+        padding: 10px 15px;
+        background-color: $menuBgColor;
+        border-radius: 5px;
+        color: #fff;
+    }
+    &__menu-burger {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        &__menu-items {
+            display: none;
+        }
+        &__menu-burger {
+            display: block;
+            width: 70%;
+        }
+     }
+    
+}

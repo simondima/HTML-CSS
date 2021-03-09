@@ -1,0 +1,67 @@
+.pricing {
+    padding-top: 70px;
+    text-align: center;
+    background-color: #efefef;
+
+    &__title {
+        font-size: 50px;
+	    font-family: 'MontserratBold';
+        color: $secondColor;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        @include flex (center, space-between);
+        padding: 60px 0;
+    }
+
+    &__box-item {
+        width: 30%;
+        height: auto;
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__plan-name {
+        padding-top: 40px;
+        font-size: 22px;
+        font-family: PTSerifRegular;
+    }
+    
+    &__plan-money {
+        font-size: 60px;
+	    font-family: 'MontserratBold';
+        color: $firstColor;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-top: 40px;
+    }
+
+    &__plan-list {
+        padding-top: 30px;
+        font-size: 20px;
+        font-family: PTSerifRegular;
+        line-height: 1.5;
+    }
+
+    &__btn-blue{
+        width: 200px;
+        @include button-blue;
+    }
+
+    &__btn-red{
+        width: 200px;
+        @include button-red;
+    }
+
+    @media (max-width: 910px) {
+        &__btn-blue{
+            width: 200px;
+        }
+    
+        &__btn-red{
+            width: 200px;
+        }       
+    }
+}
