@@ -496,6 +496,15 @@ img {
   }
 }
 
+@media (max-width: 414px) {
+  .story {
+    height: 200px;
+  }
+  .story__about-us {
+    padding: 15px 0;
+  }
+}
+
 @media (max-width: 375px) {
   .story {
     height: 200px;
