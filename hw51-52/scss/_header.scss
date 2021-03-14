@@ -1,0 +1,126 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.head {
+    @include flex(center, space-between);
+    padding: 45px 0;
+
+    &__logo a {
+        font-size: 88px;
+        font-family: QuiteChocolatey;
+        color: #fff;
+    }
+
+    &__menu-items {
+        @include flex(center, space-between);
+ 
+    }
+    &__menu-items li {
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    &__menu-items li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: MontserratRegular;
+    }
+    .active {
+        padding: 10px 15px;
+        background-color: $menuBgColor;
+        border-radius: 5px;
+        color: #fff;
+    }
+    &__menu-burger {
+        display: none;
+        padding: 9px 5px;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    &__burger-item {
+        display: block;
+        width: 22px;
+        height: 3px;
+        background-color: #fff;
+        font-size: 0;
+        color: transparent;
+        position: relative;
+    }
+
+    &__burger-item:before,
+    &__burger-item:after {
+        content: "";
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__burger-item:before {
+        width: 16px;
+        top: -8px;
+    }
+    &__burger-item:after {
+        width: 26px;
+        bottom: -8px;
+    }
+    
+    @media (max-width: 900px) {
+        &__menu {
+            position: relative;
+            &:hover {
+                .head__menu-items {
+                    z-index: 1;
+                    visibility: visible;
+                    transform: scaleY(1);
+                }
+            }
+        }
+
+        &__menu-burger {
+            display: block;
+        }
+
+        &__menu-items {
+            display: block;
+            transform: scaleY(0);
+            transition: transform .5s;
+            text-align: center;
+            position: absolute;
+            background: grey;
+            top: 20px;
+            right: 0;
+            width: 290px;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: -1;
+            visibility: hidden;
+        }
+
+        &__menu-items li {
+            padding-left: 0;
+        }
+
+        &__menu-items li a {
+            padding: 15px;
+        }
+        .active {
+            padding: 15px;
+        }
+ 
+     }
+    
+     @media (max-width: 375px) {
+        &__logo a {
+            font-size: 60px;
+        }
+     }
+}

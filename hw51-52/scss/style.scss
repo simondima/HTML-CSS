@@ -1,0 +1,26 @@
+@import './var';
+@import './mixins';
+
+@import './fonts';
+@import './normalize';
+
+
+.wrapper{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &__posrel {
+    position: relative;
+    z-index: 1;
+    }
+}
+
+@import './form';
+@import './header';
+@import './hero';
+@import './services';
+@import './story';
+@import './pricing';
+@import './people';
+@import './footer';

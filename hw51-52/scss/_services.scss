@@ -1,0 +1,74 @@
+.services {
+    padding-top: 45px;
+
+    &__title {
+        font-size: 50px;
+        font-family: 'MontserratBold';
+        text-transform: uppercase;
+        color: $firstColor;
+    }
+    &__title span {
+        color: $secondColor;
+    }
+    &__box {
+        @include flex(stretch, space-between);
+        padding: 100px 0;
+    }
+    
+    &__box-item {
+        width: 20%;
+        text-align: center;
+    }
+    
+    &__box-item p {
+        font-size: 20px;
+        font-family: PTSerifRegular;
+        color: $ServicesTextColor;
+    }
+    @media (max-width: 900px) {
+        &__title {
+            text-align: center;
+        }
+        &__box {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+        &__box-item {
+            width: 50%;
+            margin: 40px auto;
+        }
+        
+        &__box-item img {
+            width: 80%;
+        }
+        &__box-item p {
+            font-size: 18px;
+        }
+        
+    }
+
+    @media (max-width: 414px) {
+        &__box {
+            grid-template-columns: 1fr;
+        }
+        
+        &__box-item img {
+            width: 60%;
+        }
+        &__box-item p {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        &__title {
+            padding-top: 30px;
+            font-size: 40px;
+        }
+        &__box {
+            padding-top: 20px;
+        }
+    }
+}

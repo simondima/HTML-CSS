@@ -1,0 +1,61 @@
+.story {
+    width: 100%;
+
+    background-color: $secondColor;
+
+    &__about-us {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__text {
+        width: 70%;
+        font-size: 20px;
+        color: $StoryTextColor;
+    }
+
+    &__btn {
+        @include button-red;
+    }
+
+    &__btn:hover {
+        background-color: $secondColor;
+        border: 1px solid #fff;
+    }
+
+    @media (max-width: 910px) {
+        &__btn {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        height: 140px;
+
+        &__about-us {
+            padding: 15px 0;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    
+
+    @media (max-width: 375px) {
+            height: 180px;
+
+        &__about-us {
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+
+        &__text {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+}
