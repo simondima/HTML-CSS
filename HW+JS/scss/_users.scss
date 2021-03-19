@@ -1,0 +1,48 @@
+.users {
+            background-color: $usersBg;
+            height: 180px;
+            width: 100%;
+
+        &__main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__name h1{
+            font-size: 48px;
+            font-weight: 700;
+            color: $usersColorH1;
+            padding: 60px 0 20px;
+        }
+
+        &__name h2{
+            font-size: 28px;
+            font-weight: 400;
+            color: $usersColorH2;
+            margin-bottom: 20px;
+        }
+
+		&__logo img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+		}
+        
+        @media (max-width: 768px) {
+            height: 350px;
+
+        &__main{
+            display: block;
+            text-align: center;
+            }
+        &__name h1{
+            padding: 40px 0 20px;
+        }
+
+        &__name h2{
+            margin-bottom: 10px;
+        }
+        }
+}

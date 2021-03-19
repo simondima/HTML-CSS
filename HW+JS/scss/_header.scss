@@ -1,0 +1,16 @@
+.header {
+    background-color: $headerBg;
+    height: 100px;
+
+		&__main-text{
+            color: $headerText;
+            font-size: 30px;
+            font-family: lobster;
+            font-weight: 400;
+            border-bottom: 2px solid $headerText;
+            padding: 45px 0 10px;
+            text-align: center;
+            
+        }
+}
+

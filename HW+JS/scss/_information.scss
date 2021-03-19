@@ -1,0 +1,27 @@
+.information {
+      margin: 20px 0;
+
+		&__main {
+            width: 300px;
+            margin: 0 auto;
+		}
+
+		&__main-title {
+            font-size: 30px;
+            font-family: Oswald;
+            color: $mainTitleColor;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+		}
+
+		&__items {
+            font-size: 18px;
+            font-family: Oswald;
+            color: $itemsColor;
+            font-weight: 400;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000;
+            width: 100%;
+		}
+}
